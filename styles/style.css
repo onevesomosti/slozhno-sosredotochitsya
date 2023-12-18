@@ -22,8 +22,8 @@
   border-block-start: 1px solid var(--decoration-color);
   inline-size: 25px;
   block-size: 25px;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
 }
 
 .decorated-zone::after {
@@ -33,8 +33,8 @@
   border-block-end: 1px solid var(--decoration-color);
   inline-size: 25px;
   block-size: 25px;
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 .decorated-zone__element-rec {
@@ -66,8 +66,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
-  margin: 10px;
-  min-block-size: 355px;
+  padding: 10px;
+  min-block-size: 648px;
   block-size: 100vb;
 }
 
@@ -125,7 +125,8 @@
 }
 
 .content {
-  margin: 10px;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
 }
 
 .content__block {
@@ -183,9 +184,9 @@
   display: grid;
   align-items: center;
   height: 100vb;
-  margin: 10px;
-  margin-block-start: 40px;
-  min-block-size: 305px;
+  padding: 10px;
+  margin-block-start: 30px;
+  min-block-size: 648px;
 }
 
 .footer__title {
