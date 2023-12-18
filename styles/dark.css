@@ -11,3 +11,7 @@
   --decoration-color: #ff0070;
   background-image: url("../images/cover-image-dark.png");
 }
+
+.theme_dark .decorated-zone__element-rec {
+  display: flex;
+}
