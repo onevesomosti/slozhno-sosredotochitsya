@@ -1,6 +1,6 @@
 .page {
   color: var(--text-color);
-  font-family: var(--font-family, monospace, sans-serif);
+  font-family: var(--font-family, monospace);
   font-size: 18px;
   line-height: 130%;
   background-color: var(--bg-color);
@@ -89,6 +89,7 @@
   text-transform: lowercase;
   background-color: transparent;
   cursor: pointer;
+  transition: border 0.5s; /*для плавного ховера*/
 }
 
 .header__theme-menu-button:hover {
@@ -206,7 +207,10 @@
 
 @media (width >= 768px) {
   .content_block_row {
-    grid-template-columns: 1fr 2fr;
+    /*дает погрешность на несколько пикселей: */
+    /*grid-template-columns: 1fr 2fr;*/
+    /*для более точной ширины колонок: */
+    grid-template-columns: calc((100% - 40px) / 3) calc(((100% - 40px) / 3) * 2 + 20px);
   }
 
   .content_block_row > .content__title {
